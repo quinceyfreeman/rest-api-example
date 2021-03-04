@@ -1,4 +1,3 @@
-from flask import render_template
 import connexion
 
 
@@ -12,7 +11,7 @@ app.add_api('swagger.yml')
 # Create a URL route in our application for '/'
 @app.route('/')
 def home():
-    return render_template('home.html')
+    return "Hello world"
 
 
 # If we're running in stand alone mode, run the application
